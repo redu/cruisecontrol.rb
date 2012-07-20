@@ -4,13 +4,13 @@ class Configuration
   @build_request_checking_interval = 5.seconds
   @dashboard_refresh_interval = 30.seconds
   @dashboard_url = nil
-  @email_from = 'cruisecontrol@thoughtworks.com'
+  @email_from = 'ci@redu.com.br'
   @disable_admin_ui = false
   @serialize_builds = false
   @serialized_build_timeout = 3.hour
   @git_load_new_changesets_timeout = 5.minutes
   @build_history_limit = 30
-  @max_file_display_length = 100.kilobytes
+  @max_file_display_length = 5000.kilobytes
 
   class << self
     # published configuration options (mentioned in config/site_config.rb.example)

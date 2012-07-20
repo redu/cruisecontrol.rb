@@ -1,6 +1,15 @@
 # Project-specific configuration for CruiseControl.rb
 
 Project.configure do |project|
+  project.email_notifier.from = 'ci@redu.com.br'
+  project.email_notifier.emails = ['guilhermec@redu.com.br',
+				   'jessica@redu.com.br',
+				   'tacsio@redu.com.br',
+				   'juliana@redu.com.br',
+				   'fltiago@redu.com.br',
+				   'matheus@redu.com.br']
+
+  project.build_command = 'bash redu_build'
 
   # Send email notifications about broken and fixed builds to email1@your.site, email2@your.site (default: send to nobody)
   # project.email_notifier.emails = ['email1@your.site', 'email2@your.site']
