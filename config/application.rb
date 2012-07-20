@@ -45,6 +45,11 @@ module CruiseControl
     config.autoload_paths << Rails.root.join('lib', 'builder_plugins').to_s
     config.autoload_paths << CruiseControl.data_root.join('builder_plugins').to_s
     
+    config.admin = {
+      :username => 'redu-ci',
+      :password => 'penn441\boob'
+    }
+
     config.after_initialize do
       require Rails.root.join('config', 'configuration')
       
