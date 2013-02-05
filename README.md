@@ -122,3 +122,6 @@ Configurar para dar build apeanas quando forem realizadas modificações:
 project.scheduler.always_build = false
 ```
 
+## Todo
+### Configurar Git keys
+
