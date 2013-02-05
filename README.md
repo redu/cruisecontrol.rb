@@ -73,7 +73,7 @@ A autenticação utiliza é simplesmente o http_auth_basic.
 
 config.admin = {
   :username => 'redu-ci',
-  :password => 'penn441\boob'
+  :password => 'password'
 }
 ```
 
